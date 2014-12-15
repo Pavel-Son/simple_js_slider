@@ -1,0 +1,102 @@
+.container {
+	width: 600px;
+	margin: auto;
+}
+
+.slider-nav {
+	display: none;
+	margin: 0;
+}
+
+.slider-nav ul {
+	list-style: none;
+}
+
+.slider-nav .button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+	width: 15%;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	background: black;
+	color: white;
+	border: none;
+}
+.slider-nav .button:first-child {
+	left: 0;
+	right: 85%;
+}
+.slider-nav .button:last-child {
+	left: 85%;
+	right: 0;
+}
+
+.slider-nav .button:hover {
+	opacity: 0.3;
+}
+
+.slider {
+	position: relative;
+	width: inherit;
+	height: 300px;
+	overflow: scroll;
+	width: 600px;
+	margin: auto;
+}
+.slider[data-click="true"]:hover {
+	cursor: pointer;
+}
+
+.slider ul {
+	padding: 0;
+	margin: 0;
+	width: 10000px;
+	list-style: none;
+}
+
+.slider li {
+	float: left;
+}
+.pagination ul {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.pagination li {
+	margin: 10px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px solid black;
+	background: white;
+	opacity: 0.5;
+	z-index: 5
+}
+.popup, .overlay {
+	display: none;
+}
+.popup {
+	width: 600px;
+	margin: auto;
+	position: absolute;
+	background: white;
+	z-index: 3;
+}
+.popup-wrapper {
+	padding: 20px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0.8;
+	background: black;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="slider" id="slider1" 
+			data-transition='fade'
+			data-speed='200'
+			data-autoplay='false'
+			data-autoplay-interval="2500"
+			data-click='true'>
+			<ul>
+				<li><img src="http://lorempixel.com/600/300/" width="600" alt=""></li>
+				<li><img src="http://lorempixel.com/600/300/" width="600" alt=""></li>
+				<li><img src="http://lorempixel.com/600/300/" width="600" alt=""></li>
+				<li><img src="http://lorempixel.com/600/300/" width="600" alt=""></li>
+				<li><img src="http://lorempixel.com/600/300/" width="600" alt=""></li>
+			</ul>	
+			<div class="slider-nav" data-slider="slider1">
+				<button class="button" data-dir="prev">prev</button>
+				<button class="button" data-dir="next">next</button>
+				<!-- <ul>
+					<li><a class="button" data-dir="prev" href="">prev</a></li>
+					<li><a class="button" data-dir="next" href="">next</a></li>
+				</ul> -->
+			</div>		
+		</div>
+		
+
+		<br/>
+		<a href="#" data-popup='popup1'>Popup!</a>
+	</div>
+	<div class="popup" id="popup1">
+		<div class="popup-wrapper">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum perspiciatis possimus neque, odio ducimus harum blanditiis nulla minima, eos eveniet obcaecati ut aut commodi sed excepturi fuga culpa, repudiandae? Eos!</p>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="script.js"></script>
+	<script>
+		$('div.slider').slider();
+		$('div.popup').popup();
+	</script>
+</body>
+</html>
